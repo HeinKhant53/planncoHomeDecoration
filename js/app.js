@@ -56,5 +56,20 @@ $(document).ready(function(){
 
         //End Properties
 
+        // Start Adv Section
+        $(window).scroll(function(){
+            let getscrolltop = $(this).scrollTop();
+            // console.log(getscrolltop);
+
+            if(getscrolltop >= 900){
+                $(".advimages").addClass("fromlefts");
+                $(".advtexts").addClass("fromrights");
+            }else{
+                $(".advimages").removeClass("fromlefts");
+                $(".advtexts").removeClass("fromrights");
+            }
+        })
+        // End Adv Section
+
     //End Header
 })

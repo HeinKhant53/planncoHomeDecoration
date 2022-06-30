@@ -217,3 +217,81 @@ header{
     color: var(--primary-color);
 }
 /* End Property */
+
+
+/* Start Adv Section */
+.missions{
+    background: var(--secondary-color);
+}
+.fromlefts{
+    animation-name: fromleftani;
+    animation-duration: 3s;
+}
+
+.fromrights{
+    animation-name: fromrightani;
+    animation-duration: 3s;
+}
+@keyframes fromleftani{
+    0%{
+        transform: translate(-150px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fromrightani{
+    0%{
+        transform: translate(150px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+/* End Adv Section */
+
+
+/* Start Service Section */
+.services{
+    background: linear-gradient(
+        200deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+}
+
+.servicecards{
+    overflow: hidden;
+
+    position: relative;
+}
+
+.servicecards img{
+    transition: transform .5s;
+}
+.servicecards:hover img{
+    transform: scale(1.1);
+}
+
+.servicetexts{
+    width: 40%;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+
+    padding: 8px 0;
+
+    position: absolute;
+    top: 80%;
+    right: 0;
+
+    opacity: 0.5;
+}
+
+/* End Service Section */

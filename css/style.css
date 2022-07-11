@@ -363,3 +363,17 @@ ul.clientslists li:hover{
     }
 }
 /* End Client Section */
+
+/* Start Customer Section */
+.customers{
+    background: linear-gradient(
+        rgba(0,0,0,0),
+        rgba(0,0,0,1)
+    ),url("../assets/img/banner/banner3.jpg");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* End Customer Section */
